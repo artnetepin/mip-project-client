@@ -1,2 +1,3 @@
 # mip-project-client
-OAMK MIP 2017 project application
+Client-side application as a part of OAMK Mobile Internet Programming course project
+2017
