@@ -1,0 +1,15 @@
+.search-field {
+  margin-top: 10px;
+}
+
+.search-container {
+  max-width: 100%;
+}
+
+.search-image {
+  width: 30%;
+  height: auto;
+  display: inline-block;
+  background: #f0f0f0;
+  margin: 3px;
+}

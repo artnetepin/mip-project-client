@@ -1,0 +1,26 @@
+<ion-view title="Profile" id="profile-page">
+  <ion-content padding="true" class="has-header">
+    <div id="profile-container" class="profile-container">
+      <div class="profile-container-header">
+        <div class="profile-container-photo">
+          <img class="profile-photo" src="img/placeholder-image.png" alt="Profile photo">
+        </div>
+        <div class="profile-container-stats">
+          <div class="profile-stats"> <span class="profile-stats-number">12</span>following</div>
+          <div class="profile-stats"> <span class="profile-stats-number">12</span>followers</div>
+          <div class="profile-stats"> <span class="profile-stats-number">12</span>posts</div>
+          <button id="profile-edit" class="button-profile-edit">Edit your profile</button>
+        </div>
+
+      </div>
+      <div class="profile-container-desc">
+        <h5 class="profile-desc-name">Artem Netepin</h5>
+        <p class="profile-desc-text">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="profile-container-grid">
+        <img ng-repeat="post in postGrid"  class="profile-grid-image" src="{{post.image}}" alt="image-name">
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

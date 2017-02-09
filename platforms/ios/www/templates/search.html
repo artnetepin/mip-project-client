@@ -1,0 +1,13 @@
+<ion-view title="Search" hide-nav-bar="true" id="search-page">
+  <ion-content padding="true" class=" manual-remove-top-padding">
+    <form id="search-form" class="list search-field">
+      <label class="item item-input" id="search-search4">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search">
+      </label>
+    </form>
+    <div class="search-container">
+        <img ng-repeat="cell in searchGrid" class="search-image" src="{{cell.image}}" alt="Image">
+    </div>
+  </ion-content>
+</ion-view>

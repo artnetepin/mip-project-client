@@ -1,0 +1,37 @@
+<ion-view title="Home" id="home-page">
+  <ion-content padding="true" class="has-header">
+    <div class="home-container" ng-repeat="post in posts">
+      <div class="post-header">
+        <div class="post-header-image">
+          <img class="post-avatar" src="{{post.avatar}}" alt="Profile photo">
+        </div>
+        <div class="post-header-name">
+          <h5 class="post-name">{{post.name}}</h5>
+        </div>
+      </div>
+      <div class="post-image-box">
+        <img class="post-image" src="{{post.image}}" alt="">
+      </div>
+      <div class="post-buttons">
+        <button id="btn-like" class="button button-light button-small button-icon icon ion-ios-heart-outline"></button>
+        <button id="btn-comment" class="button button-light button-small button-icon icon ion-ios-chatbubble-outline"></button>
+      </div>
+      <hr>
+      <ion-list>
+        <ion-item class="post-likes">
+          <i class="icon ion-heart"></i><span>{{post.likes}}</span> likes
+        </ion-item>
+      </ion-list>
+      <div class="post-description">
+        <h5 class="post-nickname">{{post.comments[0].user}}</h5>
+        <p class="post-text">
+           {{post.comments[0].comment}}
+        </p>
+      </div>
+      <div class="post-comments">
+        <a href="#" class="link-comments">View all 2 comments</a>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
