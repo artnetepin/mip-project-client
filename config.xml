@@ -73,4 +73,5 @@
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
   <allow-navigation href="http://192.168.1.102:8100"/>
+  <allow-navigation href="http://192.168.43.115:8100"/>
 </widget>

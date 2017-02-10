@@ -12,7 +12,7 @@ function ($scope, $stateParams, $http) {
     ];
 
     $http.get("https://whispering-mesa-21315.herokuapp.com/post").then(function(res){
-      Array.prototype.push.apply($scope.posts,res.data);
+      Array.prototype.push.apply(,res.data);
     });
 }])
 
